@@ -52,7 +52,6 @@ pipeline {
         sh "java -jar rectangle_${env.BUILD_NUMBER}.jar 3 4"
       }
     }
-
     stage('Promote to Green') {
       agent {
         label 'apache'
